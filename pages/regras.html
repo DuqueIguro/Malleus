@@ -8,278 +8,302 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../estilizacao/index/index.css">
   <link rel="stylesheet" href="../estilizacao/regras/regras.css">
+  <script src="../estilizacao/regras/regras.js" defer></script>
 </head>
 <body>
 
-<div id="nave" aria-hidden="true"></div>
+<div class="fundo" aria-hidden="true"></div>
 
-<div class="conteudo">
+<header class="barra">
+  <a class="voltar" href="../index.html">← Portal</a>
+  <span class="barra-titulo">Regras da Casa</span>
+  <a class="botao-pdf" href="../downloads/MalleusMaleficarumRegras.pdf" download>
+    <span aria-hidden="true">⤓</span> <span>Baixar PDF</span>
+  </a>
+</header>
 
-  <div class="cabecalho-regras">
-    <a class="voltar" href="index.html">← Portal</a>
-    <a class="botao-pdf" href="../../downloads/Malleus_Maleficarum_-_Regras.pdf" download>
-      <span aria-hidden="true">⤓</span> Baixar PDF
-    </a>
-  </div>
+<div class="layout">
 
-  <header class="regras-topo">
-    <div class="cruz" aria-hidden="true">✠</div>
-    <h1>Regras da Casa</h1>
-    <p class="subtitulo">Malleus Maleficarum · Doutrinas, cânones e regras do Santo Ofício</p>
-    <p class="resumo">Esta página reúne as regras próprias da campanha. Elas complementam o livro Ordem Paranormal. Quando houver diferença, valem estas regras.</p>
-  </header>
-
-  <nav class="indice" aria-labelledby="indice-titulo">
-    <h2 id="indice-titulo">Conteúdo</h2>
-    <ol>
-      <li><a href="#cap-1">Doutrina das Coisas Ocultas</a></li>
-      <li><a href="#cap-2">Forças do Véu</a></li>
-      <li><a href="#cap-3">Doutrina da Devoção</a></li>
-      <li><a href="#cap-4">Moeda e Gentio</a></li>
-      <li><a href="#cap-5">Julgamento e Destino</a></li>
+  <aside class="nav-caps" aria-label="Capítulos">
+    <p class="nav-titulo">Capítulos</p>
+    <ol id="lista-caps">
+      <li>
+        <a href="#cap-1" data-cap="cap-1"><span class="n">1</span><span>Doutrina das Coisas Ocultas</span></a>
+        <ul class="subnav" aria-label="Seções do capítulo"></ul>
+      </li>
+      <li>
+        <a href="#cap-2" data-cap="cap-2"><span class="n">2</span><span>Forças do Véu</span></a>
+        <ul class="subnav" aria-label="Seções do capítulo"></ul>
+      </li>
+      <li>
+        <a href="#cap-3" data-cap="cap-3"><span class="n">3</span><span>Doutrina da Devoção</span></a>
+        <ul class="subnav" aria-label="Seções do capítulo"></ul>
+      </li>
+      <li>
+        <a href="#cap-4" data-cap="cap-4"><span class="n">4</span><span>Moeda e Gentio</span></a>
+        <ul class="subnav" aria-label="Seções do capítulo"></ul>
+      </li>
+      <li>
+        <a href="#cap-5" data-cap="cap-5"><span class="n">5</span><span>Julgamento e Destino</span></a>
+        <ul class="subnav" aria-label="Seções do capítulo"></ul>
+      </li>
     </ol>
-  </nav>
+  </aside>
 
-  <!-- ============ CAPÍTULO 1 ============ -->
-  <article class="capitulo" id="cap-1">
-    <span class="numero">Capítulo 1</span>
-    <h2>Doutrina das Coisas Ocultas</h2>
-    <p class="aforismo-cap">Antes de empunhar a espada, é preciso compreender a natureza da praga que se combate.</p>
+  <main class="principal">
 
-    <h3>O Véu e o Abismo Exterior</h3>
-    <p>A Realidade é separada das forças profanas por uma barreira espiritual chamada <strong>Véu</strong>. Do outro lado jaz o <strong>Abismo Exterior</strong>, um plano de condenação e insanidade. Em condições normais, o Véu se mantém firme pela ordem e pela oração dos justos. Atos hediondos, massacres, blasfêmias, conspirações e sobretudo o Temor humano o desfazem. Quando ele se esgarça, o Abismo vaza sobre a terra.</p>
+    <header class="topo-regras">
+      <div class="cruz" aria-hidden="true">✠</div>
+      <h1>Regras da Casa</h1>
+      <p class="subtitulo">Doutrinas, cânones e regras do Santo Ofício</p>
+      <p class="resumo">Estas regras complementam o livro Ordem Paranormal. Quando houver diferença, valem as regras da casa.</p>
+    </header>
 
-    <h3>A carne das abominações</h3>
-    <p>As entidades do Abismo não têm forma física própria. Para se materializar, precisam de um <strong>molde</strong>, que é fornecido pelo Temor dos habitantes da Realidade: lendas locais, pânicos coletivos, culpas inconfessáveis e pavores de cada povoado. Por isso, investigar a raiz do pecado e do medo que deu origem à criatura é o único meio eficaz de quebrar sua fôrma.</p>
+    <!-- ============ CAPÍTULO 1 ============ -->
+    <article class="capitulo" id="cap-1">
+      <p class="numero">Capítulo 1 de 5</p>
+      <h2>Doutrina das Coisas Ocultas</h2>
+      <p class="aforismo-cap">Antes de empunhar a espada, é preciso compreender a natureza da praga que se combate.</p>
 
-    <h3>A Mácula (NEX)</h3>
-    <p>Quem enfrenta o Abismo paga um tributo: a contaminação de sua pureza, chamada <strong>Mácula</strong> e medida em NEX. Quanto maior a Mácula, mais forte e resistente o personagem se torna, mas também mais vulnerável às entidades.</p>
-    <div class="tabela-wrap">
-      <table>
-        <thead><tr><th>Mácula</th><th>Estágio</th></tr></thead>
-        <tbody>
-          <tr><td class="mono">0%</td><td>Alma pura (civil ou mundano)</td></tr>
-          <tr><td class="mono">5% a 45%</td><td>Sussurros e corrupção espiritual inicial</td></tr>
-          <tr><td class="mono">50%</td><td>Ponto de inflexão: mais Mácula que pureza</td></tr>
-          <tr><td class="mono">55% a 99%</td><td>Afinidade manifesta e degeneração carnal</td></tr>
-        </tbody>
-      </table>
-    </div>
+      <h3>O Véu e o Abismo Exterior</h3>
+      <p>A Realidade é separada das forças profanas por uma barreira espiritual chamada <strong>Véu</strong>. Do outro lado jaz o <strong>Abismo Exterior</strong>, um plano de condenação e insanidade. Em condições normais, o Véu se mantém firme pela ordem e pela oração dos justos. Atos hediondos, massacres, blasfêmias, conspirações e sobretudo o Temor humano o desfazem. Quando ele se esgarça, o Abismo vaza sobre a terra.</p>
 
-    <h3>Os sussurros e a queda</h3>
-    <p>Abaixo de 50%, a entidade com a qual a alma tem inclinação oculta já planta impulsos, pensamentos e delírios noturnos. O personagem tende a atribuí-los às próprias fraquezas. Ao atingir 50%, a afinidade se torna visível no corpo, com olhos de cor anômala, veias escurecidas, pele pálida, estigmas ou rigidez sobrenatural. A partir daí, o personagem é, ao mesmo tempo, uma arma valiosa e um suspeito sob vigilância do Santo Ofício.</p>
-  </article>
+      <h3>A carne das abominações</h3>
+      <p>As entidades do Abismo não têm forma física própria. Para se materializar, precisam de um <strong>molde</strong>, fornecido pelo Temor dos habitantes da Realidade: lendas locais, pânicos coletivos, culpas inconfessáveis e pavores de cada povoado. Por isso, investigar a raiz do pecado e do medo que deu origem à criatura é o único meio eficaz de quebrar sua fôrma.</p>
 
-  <!-- ============ CAPÍTULO 2 ============ -->
-  <article class="capitulo" id="cap-2">
-    <span class="numero">Capítulo 2</span>
-    <h2>Forças do Véu: os Quatro Pecados e a Graça Primordial</h2>
-    <p class="aforismo-cap">O princípio da ruína é o tremor do espírito.</p>
-
-    <p>As manifestações do Abismo se dividem em cinco forças. O <strong>Temor</strong> é a raiz de todas elas e não está preso ao ciclo de opressão. As outras quatro formam um ciclo, em que cada uma oprime uma e é oprimida por outra.</p>
-
-    <h3>Temor · O Medo (elemento matriz)</h3>
-    <p>O terror primitivo inscrito na carne desde a Queda. Manifesta-se como névoa fria e sem cheiro, como o peso de olhos invisíveis nas catedrais vazias, ou como cânticos distorcidos que gelam o coração. Transcende o ciclo: não é oprimido por nenhuma força e não oprime nenhuma.</p>
-
-    <h3>Pecado · O Sangue</h3>
-    <p><em>A carne clama, o sangue condena.</em> A fraqueza carnal levada ao extremo: fúria, luxúria, gula e suplício. Reconhece-se por sangue espesso que não coagula, cheiro de carniça e carne que se deforma em garras e presas. Oprime a Fé e é oprimido pela Mágoa.</p>
-
-    <h3>Fé · O Conhecimento</h3>
-    <p><em>Saber demais é perder a salvação.</em> A sede perigosa de saber o que cabe apenas a Deus: gnose herética, manuscritos proibidos e segredos murmurados nos claustros. Manifesta-se em sigilos dourados que não consomem o pergaminho e em sussurros de línguas mortas. Oprime a Desordem e é oprimida pelo Pecado.</p>
-
-    <h3>Desordem · A Energia</h3>
-    <p><em>A heresia consome o que o caos inflama.</em> A insubordinação, o delírio e o caos imprevisível. Manifesta-se em chamas frias, tempestades repentinas e vitrais que refletem cores inexistentes. Oprime a Mágoa e é oprimida pela Fé.</p>
-
-    <h3>Mágoa · A Morte</h3>
-    <p><em>Lembra-te de que és pó, e ao pó hás de voltar.</em> O luto eterno, a decadência e a espiral do tempo. Manifesta-se em cinzas enegrecidas, sepulcros que transbordam óleo fétido e uma letargia que drena a vitalidade. Oprime o Pecado e é oprimida pela Desordem.</p>
-
-    <div class="caixa">
-      <h4>Tábua de opressão</h4>
+      <h3>A Mácula (NEX)</h3>
+      <p>Quem enfrenta o Abismo paga um tributo: a contaminação de sua pureza, chamada <strong>Mácula</strong> e medida em NEX. Quanto maior a Mácula, mais forte e resistente o personagem se torna, mas também mais vulnerável às entidades.</p>
       <div class="tabela-wrap">
         <table>
-          <thead><tr><th>Força</th><th>Oprime</th><th>É oprimida por</th></tr></thead>
+          <thead><tr><th>Mácula</th><th>Estágio</th></tr></thead>
           <tbody>
-            <tr><td>Temor</td><td>Nenhuma (transcende)</td><td>Nenhuma (incontido)</td></tr>
-            <tr><td>Pecado</td><td>Fé</td><td>Mágoa</td></tr>
-            <tr><td>Fé</td><td>Desordem</td><td>Pecado</td></tr>
-            <tr><td>Desordem</td><td>Mágoa</td><td>Fé</td></tr>
-            <tr><td>Mágoa</td><td>Pecado</td><td>Desordem</td></tr>
+            <tr><td class="mono">0%</td><td>Alma pura (civil ou mundano)</td></tr>
+            <tr><td class="mono">5% a 45%</td><td>Sussurros e corrupção espiritual inicial</td></tr>
+            <tr><td class="mono">50%</td><td>Ponto de inflexão: mais Mácula que pureza</td></tr>
+            <tr><td class="mono">55% a 99%</td><td>Afinidade manifesta e degeneração carnal</td></tr>
           </tbody>
         </table>
       </div>
-    </div>
-  </article>
 
-  <!-- ============ CAPÍTULO 3 ============ -->
-  <article class="capitulo" id="cap-3">
-    <span class="numero">Capítulo 3</span>
-    <h2>Doutrina da Devoção: o Sistema de Crença</h2>
-    <p class="aforismo-cap">A armadura do inquisidor é forjada na convicção de sua alma.</p>
+      <h3>Os sussurros e a queda</h3>
+      <p>Abaixo de 50%, a entidade com a qual a alma tem inclinação oculta já planta impulsos, pensamentos e delírios noturnos. O personagem tende a atribuí-los às próprias fraquezas. Ao atingir 50%, a afinidade se torna visível no corpo, com olhos de cor anômala, veias escurecidas, pele pálida, estigmas ou rigidez sobrenatural. A partir daí, ele é ao mesmo tempo uma arma valiosa e um suspeito sob vigilância do Santo Ofício.</p>
+    </article>
 
-    <h3>A Regra da Crença</h3>
-    <p>Nesta campanha, o personagem não tem Sanidade (SAN) nem Pontos de Esforço (PE). Em seu lugar, usa apenas duas barras:</p>
-    <ul>
-      <li><strong>Pontos de Vida (PV):</strong> a integridade do corpo.</li>
-      <li><strong>Pontos de Crença (PC):</strong> a chama interior da devoção. Substitui SAN e PE.</li>
-    </ul>
-    <p>Gastar PC representa exigir milagres do próprio espírito, hesitar diante do medo ou ver a fé abalada. Habilidades e rituais que custariam PE passam a drenar PC, e qualquer dano mental ou perda de sanidade desconta diretamente do PC. Se o PC chegar a 0, o personagem entra em <strong>Crise de Fé</strong>, equivalente a enlouquecer, com risco iminente de <strong>Apostasia</strong>.</p>
+    <!-- ============ CAPÍTULO 2 ============ -->
+    <article class="capitulo" id="cap-2">
+      <p class="numero">Capítulo 2 de 5</p>
+      <h2>Forças do Véu: os Quatro Pecados e a Graça Primordial</h2>
+      <p class="aforismo-cap">O princípio da ruína é o tremor do espírito.</p>
 
-    <h3>Valores iniciais e progressão</h3>
-    <div class="formula">PC máximo = Base da classe + Presença + (Avanços de NEX × (Incremento + Presença))</div>
-    <div class="tabela-wrap">
-      <table>
-        <thead><tr><th>Classe</th><th>Base inicial</th><th>Incremento por avanço de NEX</th></tr></thead>
-        <tbody>
-          <tr><td>Combatente</td><td class="mono">6 + Presença</td><td class="mono">3 + Presença</td></tr>
-          <tr><td>Especialista</td><td class="mono">8 + Presença</td><td class="mono">4 + Presença</td></tr>
-          <tr><td>Ocultista</td><td class="mono">10 + Presença</td><td class="mono">5 + Presença</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="caixa">
-      <h4>Nota de implementação</h4>
-      <p>O PDF diz “a cada novo avanço de NEX”, sem o tamanho do passo. A mesa adotou, por enquanto, um avanço a cada 5% de NEX. Esta definição ainda aguarda confirmação do mestre.</p>
-    </div>
-    <p>Exemplo: um Combatente com Presença 2 e NEX 20% tem PC máximo de 6 + 2 + 4 × (3 + 2) = 28.</p>
+      <p>As manifestações do Abismo se dividem em cinco forças. O <strong>Temor</strong> é a raiz de todas e não está preso ao ciclo de opressão. As outras quatro formam um ciclo, em que cada uma oprime uma e é oprimida por outra.</p>
 
-    <h3>Ação de interlúdio: Dedicar Sua Fé</h3>
-    <p>Requer treinamento em <strong>Religião</strong>. Durante uma cena de interlúdio, o personagem se prostra, acende velas, jejua ou recita orações, e faz um teste de Religião. Para cada 10 pontos no total, recebe 5 PC temporários, arredondados para baixo. Por exemplo, um total de 24 concede 10 PC. Esses pontos duram até o fim do dia. Esta ação também conta como Relaxar para o conjurador.</p>
+      <h3>Temor · O Medo (elemento matriz)</h3>
+      <p>O terror primitivo inscrito na carne desde a Queda. Manifesta-se como névoa fria e sem cheiro, como o peso de olhos invisíveis nas catedrais vazias, ou como cânticos distorcidos que gelam o coração. Transcende o ciclo: não é oprimido por nenhuma força e não oprime nenhuma.</p>
 
-    <h3>Ritos da Fé</h3>
-    <p>Ritos exigem um teste de Religião contra uma Dificuldade de Teste (DT).</p>
-    <div class="tabela-wrap">
-      <table>
-        <thead><tr><th>Rito</th><th>DT</th><th>Execução</th><th>Alcance</th></tr></thead>
-        <tbody>
-          <tr><td>Benção</td><td class="mono">15</td><td>Ação padrão ou interlúdio. Duração: cena</td><td>Toque</td></tr>
-          <tr><td>Compartilhar a Palavra</td><td class="mono">25</td><td>Ação de interlúdio, junto de Dedicar Sua Fé</td><td>Curto</td></tr>
-          <tr><td>Rito de Iniciação</td><td class="mono">30</td><td>Ação completa (cerimônia de 1 hora)</td><td>Toque</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p><strong>Benção</strong> tem três manifestações, escolhidas no momento da execução:</p>
-    <ul>
-      <li><strong>Abençoar Ser:</strong> o alvo recebe 5 PV temporários, mais 3 para cada 5 pontos que o teste superar a DT 15. Resultado 20 concede 8 PV; resultado 25 concede 11 PV.</li>
-      <li><strong>Abençoar Objeto:</strong> o item ganha Redução de Dano igual ao total do teste, aplicada ao primeiro dano que atingir o portador. Depois disso, a bênção se dissipa.</li>
-      <li><strong>Consagrar Águas:</strong> um cubo de 1,5 m de água pura vira Água Benta, com uma porção extra para cada 5 pontos acima da DT 15, aumentando o cubo em 1,5 m.</li>
-    </ul>
-    <p><strong>Compartilhar a Palavra</strong> transfere os PC temporários do orador para todos os aliados presentes, com limite de 2 × Presença aliados.</p>
-    <p><strong>Rito de Iniciação</strong> sela a alma do fiel sob a Igreja. Se atingir a DT, o alvo perde sua Origem anterior e recebe, de forma definitiva, a Origem Abençoado.</p>
+      <h3>Pecado · O Sangue</h3>
+      <p><em>A carne clama, o sangue condena.</em> A fraqueza carnal levada ao extremo: fúria, luxúria, gula e suplício. Reconhece-se por sangue espesso que não coagula, cheiro de carniça e carne que se deforma em garras e presas. Oprime a Fé e é oprimido pela Mágoa.</p>
 
-    <h3>Relíquia: Água Benta</h3>
-    <p>Não se compra em mercados comuns. Só é obtida como voto capitular ou pelo rito Benção. Ao conjurar um ritual, o clérigo pode consumir uma dose como catalisador. Cada criatura afetada sofre 2d6 de dano direto de PV e fica <em>Fatigada</em> até o fim da cena, a não ser que passe no teste de resistência, o que anula os dois efeitos. Se o ritual manipular água usando apenas Água Benta no vórtice, as criaturas sofrem −5 nos testes de resistência.</p>
+      <h3>Fé · O Conhecimento</h3>
+      <p><em>Saber demais é perder a salvação.</em> A sede perigosa de saber o que cabe apenas a Deus: gnose herética, manuscritos proibidos e segredos murmurados nos claustros. Manifesta-se em sigilos dourados que não consomem o pergaminho e em sussurros de línguas mortas. Oprime a Desordem e é oprimida pelo Pecado.</p>
 
-    <h3>Origem: Abençoado</h3>
-    <p>Treinado em Religião e Vontade. Tem dois benefícios:</p>
-    <ul>
-      <li><strong>Crença Reforçada:</strong> bônus numéricos e restaurações de Dedicar Sua Fé ou de Ritos da Fé que afetem o próprio personagem aumentam em +1.</li>
-      <li><strong>Sorte Divina:</strong> uma vez por cena de ação ou investigação, pode sacrificar 1d4 PC para rolar novamente um teste recém-feito. Se a nova rolagem for sucesso ou um efeito mais brando e favorável, o PC sacrificado é recuperado.</li>
-    </ul>
-  </article>
+      <h3>Desordem · A Energia</h3>
+      <p><em>A heresia consome o que o caos inflama.</em> A insubordinação, o delírio e o caos imprevisível. Manifesta-se em chamas frias, tempestades repentinas e vitrais que refletem cores inexistentes. Oprime a Mágoa e é oprimida pela Fé.</p>
 
-  <!-- ============ CAPÍTULO 4 ============ -->
-  <article class="capitulo" id="cap-4">
-    <span class="numero">Capítulo 4</span>
-    <h2>Moeda e Gentio: Economia e a Alma sem Fé</h2>
-    <p class="aforismo-cap">Nem todos dobram os joelhos aos dogmas da Santa Sé.</p>
+      <h3>Mágoa · A Morte</h3>
+      <p><em>Lembra-te de que és pó, e ao pó hás de voltar.</em> O luto eterno, a decadência e a espiral do tempo. Manifesta-se em cinzas enegrecidas, sepulcros que transbordam óleo fétido e uma letargia que drena a vitalidade. Oprime o Pecado e é oprimida pela Desordem.</p>
 
-    <h3>O sistema monetário</h3>
-    <p>A riqueza é transacionada em quatro cunhagens:</p>
-    <div class="tabela-wrap">
-      <table>
-        <thead><tr><th>Moeda</th><th>Valor</th><th>Uso típico</th></tr></thead>
-        <tbody>
-          <tr><td>Cobre (MC)</td><td class="mono">1 MC</td><td>Pão, cerveja aguada, vela de sebo</td></tr>
-          <tr><td>Prata (MP)</td><td class="mono">100 MC</td><td>Estalagens, ferramentas, armas simples, dízimos</td></tr>
-          <tr><td>Ouro (MO)</td><td class="mono">100 MP (10.000 MC)</td><td>Privilégio: armaduras completas, carruagens, terras, servos</td></tr>
-          <tr><td>Platina (MPl)</td><td class="mono">1.000 MO (10.000.000 MC)</td><td>Transações entre coroas e resgates de reis</td></tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="caixa">
+        <h4>Tábua de opressão</h4>
+        <div class="tabela-wrap">
+          <table>
+            <thead><tr><th>Força</th><th>Oprime</th><th>É oprimida por</th></tr></thead>
+            <tbody>
+              <tr><td>Temor</td><td>Nenhuma (transcende)</td><td>Nenhuma (incontido)</td></tr>
+              <tr><td>Pecado</td><td>Fé</td><td>Mágoa</td></tr>
+              <tr><td>Fé</td><td>Desordem</td><td>Pecado</td></tr>
+              <tr><td>Desordem</td><td>Mágoa</td><td>Fé</td></tr>
+              <tr><td>Mágoa</td><td>Pecado</td><td>Desordem</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </article>
 
-    <h3>Patrimônio inicial</h3>
-    <p>Depende da casta, da Presença e da idade, contada a partir dos 18 anos. Se o personagem tiver 18 anos, use multiplicador 1.</p>
-    <ul>
-      <li><strong>Nobreza:</strong> 15 MO × Presença × (Idade − 18)</li>
-      <li><strong>Plebe:</strong> 10 MP × Presença × (Idade − 18)</li>
-    </ul>
-    <p>Exemplo: um nobre de 30 anos com Presença 2 acumula 15 × 2 × 12 = 360 MO.</p>
+    <!-- ============ CAPÍTULO 3 ============ -->
+    <article class="capitulo" id="cap-3">
+      <p class="numero">Capítulo 3 de 5</p>
+      <h2>Doutrina da Devoção: o Sistema de Crença</h2>
+      <p class="aforismo-cap">A armadura do inquisidor é forjada na convicção de sua alma.</p>
 
-    <h3>Carga</h3>
-    <p>A cada 50 moedas de qualquer tipo, ocupa-se 1 espaço de inventário. Quantias abaixo de 50 moedas são de peso desprezível.</p>
+      <h3>A Regra da Crença</h3>
+      <p>Nesta campanha, o personagem não tem Sanidade (SAN) nem Pontos de Esforço (PE). Em seu lugar, usa duas barras:</p>
+      <ul>
+        <li><strong>Pontos de Vida (PV):</strong> a integridade do corpo.</li>
+        <li><strong>Pontos de Crença (PC):</strong> a chama interior da devoção. Substitui SAN e PE.</li>
+      </ul>
+      <p>Gastar PC representa exigir milagres do próprio espírito, hesitar diante do medo ou ver a fé abalada. Habilidades e rituais que custariam PE passam a drenar PC, e qualquer dano mental ou perda de sanidade desconta do PC. Se o PC chegar a 0, o personagem entra em <strong>Crise de Fé</strong>, equivalente a enlouquecer, com risco iminente de <strong>Apostasia</strong>.</p>
 
-    <h3>Os gentios</h3>
-    <p>Mercenários cínicos, hereges fugitivos e pagãos também cruzam o Abismo. A Mácula os atinge da mesma forma, e eles ganham os mesmos aumentos físicos e poderes paranormais. Ao atingir 50%, também manifestam deformidades e afinidade elemental.</p>
-    <p>A diferença está na estrutura psicológica. O gentio <strong>não tem barra de Crença</strong>. Gerencia PV, Sanidade (SAN) e Pontos de Esforço (PE) pelas regras padrão. Não pode usar Dedicar Sua Fé nem manifestar Ritos da Fé, e fica suscetível aos danos de sanidade.</p>
+      <h3>Valores iniciais e progressão</h3>
+      <div class="formula">PC máximo = Base da classe + Presença + (Avanços de NEX × (Incremento + Presença))</div>
+      <div class="tabela-wrap">
+        <table>
+          <thead><tr><th>Classe</th><th>Base inicial</th><th>Incremento por avanço de NEX</th></tr></thead>
+          <tbody>
+            <tr><td>Combatente</td><td class="mono">6 + Presença</td><td class="mono">3 + Presença</td></tr>
+            <tr><td>Especialista</td><td class="mono">8 + Presença</td><td class="mono">4 + Presença</td></tr>
+            <tr><td>Ocultista</td><td class="mono">10 + Presença</td><td class="mono">5 + Presença</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="caixa">
+        <h4>Nota de implementação</h4>
+        <p>O PDF diz “a cada novo avanço de NEX”, sem o tamanho do passo. A mesa adota, por enquanto, um avanço a cada 5% de NEX. Esta definição aguarda confirmação do mestre.</p>
+      </div>
+      <p>Exemplo: um Combatente com Presença 2 e NEX 20% tem PC máximo de 6 + 2 + 4 × (3 + 2) = 28.</p>
 
-    <div class="caixa">
-      <h4>Conversão pelo Rito de Iniciação</h4>
-      <p>Um gentio pode se submeter ao Santo Ofício pelo Rito de Iniciação (Religião, DT 30). A conversão é irreversível e tem três efeitos: a Origem muda para Abençoado; SAN e PE são descartados e unificados na barra de Crença, calculada pela classe e pela Mácula acumulada; e o personagem passa a receber os benefícios de Dedicar Sua Fé, bênçãos coletivas e sacramentos.</p>
-    </div>
-  </article>
+      <h3>Ação de interlúdio: Dedicar Sua Fé</h3>
+      <p>Requer treinamento em <strong>Religião</strong>. Durante uma cena de interlúdio, o personagem se prostra, acende velas, jejua ou recita orações, e faz um teste de Religião. Para cada 10 pontos no total, recebe 5 PC temporários, arredondados para baixo. Um total de 24, por exemplo, concede 10 PC. Esses pontos duram até o fim do dia. Esta ação também conta como Relaxar para o conjurador.</p>
 
-  <!-- ============ CAPÍTULO 5 ============ -->
-  <article class="capitulo" id="cap-5">
-    <span class="numero">Capítulo 5</span>
-    <h2>Julgamento e Destino: o Sistema de Rolagem Híbrida</h2>
-    <p class="aforismo-cap">Há ações cuja realização está em dúvida, e outras cujo resultado é certo, mas cuja qualidade depende da Providência.</p>
+      <h3>Ritos da Fé</h3>
+      <p>Ritos exigem um teste de Religião contra uma Dificuldade de Teste (DT).</p>
+      <div class="tabela-wrap">
+        <table>
+          <thead><tr><th>Rito</th><th>DT</th><th>Execução</th><th>Alcance</th></tr></thead>
+          <tbody>
+            <tr><td>Benção</td><td class="mono">15</td><td>Ação padrão ou interlúdio. Duração: cena</td><td>Toque</td></tr>
+            <tr><td>Compartilhar a Palavra</td><td class="mono">25</td><td>Ação de interlúdio, junto de Dedicar Sua Fé</td><td>Curto</td></tr>
+            <tr><td>Rito de Iniciação</td><td class="mono">30</td><td>Ação completa (cerimônia de 1 hora)</td><td>Toque</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Benção</strong> tem três manifestações, escolhidas na execução:</p>
+      <ul>
+        <li><strong>Abençoar Ser:</strong> o alvo recebe 5 PV temporários, mais 3 para cada 5 pontos que o teste superar a DT 15. Resultado 20 concede 8 PV; 25 concede 11 PV.</li>
+        <li><strong>Abençoar Objeto:</strong> o item ganha Redução de Dano igual ao total do teste, aplicada ao primeiro dano que atingir o portador. Depois, a bênção se dissipa.</li>
+        <li><strong>Consagrar Águas:</strong> um cubo de 1,5 m de água pura vira Água Benta, com uma porção extra a cada 5 pontos acima da DT 15, que aumentam o cubo em 1,5 m.</li>
+      </ul>
+      <p><strong>Compartilhar a Palavra</strong> transfere os PC temporários do orador para os aliados presentes, com limite de 2 × Presença.</p>
+      <p><strong>Rito de Iniciação</strong> sela a alma do fiel sob a Igreja. Se atingir a DT, o alvo perde sua Origem anterior e recebe, de forma definitiva, a Origem Abençoado.</p>
 
-    <h3>Quando usar cada rolagem</h3>
-    <p>Cabe ao mestre decidir, com base nestas premissas:</p>
-    <ul>
-      <li><strong>Rolagem numeral:</strong> ações diretas, reativas ou competitivas contra uma DT fixa ou defesa. Serve para decidir se a ação acontece. Ex.: golpe de espada, perceber um cultista escondido, resistir a um veneno.</li>
-      <li><strong>Rolagem simbólica:</strong> quando a ação será concluída de qualquer forma, e os dados definem a qualidade e as consequências. Ex.: Dedicar Sua Fé, decifrar manuscritos, conduzir um interrogatório, preparar ritos.</li>
-    </ul>
+      <h3>Relíquia: Água Benta</h3>
+      <p>Não se compra em mercados comuns. Só é obtida como voto capitular ou pelo rito Benção. Ao conjurar um ritual, o clérigo pode consumir uma dose como catalisador. Cada criatura afetada sofre 2d6 de dano direto de PV e fica <em>Fatigada</em> até o fim da cena, a não ser que passe no teste de resistência, o que anula os dois efeitos. Se o ritual manipular água usando apenas Água Benta no vórtice, as criaturas sofrem −5 nos testes de resistência.</p>
 
-    <h3>Rolagem numeral</h3>
-    <ol>
-      <li>Role d20 em número igual ao valor do atributo. Se o atributo for 0, role 2d20 e fique com o menor.</li>
-      <li>Escolha o maior dado e some o bônus de treinamento: Destreinado +0, Treinado +5, Veterano +10, Expert +15.</li>
-      <li>Compare o total com a DT.</li>
-    </ol>
+      <h3>Origem: Abençoado</h3>
+      <p>Treinado em Religião e Vontade. Tem dois benefícios:</p>
+      <ul>
+        <li><strong>Crença Reforçada:</strong> bônus numéricos e restaurações de Dedicar Sua Fé ou de Ritos da Fé que afetem o próprio personagem aumentam em +1.</li>
+        <li><strong>Sorte Divina:</strong> uma vez por cena de ação ou investigação, pode sacrificar 1d4 PC para rolar novamente um teste recém-feito. Se a nova rolagem for sucesso ou um efeito mais brando e favorável, o PC sacrificado é recuperado.</li>
+      </ul>
+    </article>
 
-    <h3>Rolagem simbólica</h3>
-    <p>Os dados trazem três símbolos: <strong>S</strong> (Sucesso, a eficácia e a perfeição), <strong>A</strong> (Adaptação, oportunidades, serenidade e vantagens) e <strong>P</strong> (Pressão, cansaço, complicações e o olhar do Abismo).</p>
-    <div class="tabela-wrap">
-      <table>
-        <thead><tr><th>Treinamento</th><th>Dado</th><th>Natureza</th></tr></thead>
-        <tbody>
-          <tr><td>Destreinado / Leigo</td><td class="mono">d4</td><td>Faces limitadas, com mais incerteza</td></tr>
-          <tr><td>Treinado</td><td class="mono">d6</td><td>Equilíbrio entre sucessos e adaptações</td></tr>
-          <tr><td>Veterano</td><td class="mono">d10</td><td>Probabilidade alta de sucessos múltiplos</td></tr>
-          <tr><td>Expert</td><td class="mono">d12</td><td>Maestria espiritual, com faces densas</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p>Na rolagem simbólica, o treinamento não dá bônus numérico. Ele só define o tipo de dado. Um personagem com atributo 0 rola 1d4, independentemente do treinamento.</p>
+    <!-- ============ CAPÍTULO 4 ============ -->
+    <article class="capitulo" id="cap-4">
+      <p class="numero">Capítulo 4 de 5</p>
+      <h2>Moeda e Gentio: Economia e a Alma sem Fé</h2>
+      <p class="aforismo-cap">Nem todos dobram os joelhos aos dogmas da Santa Sé.</p>
 
-    <h3>Descarte e retenção</h3>
-    <p>Role um número de dados igual ao atributo. Depois, o jogador pode descartar até <strong>Atributo − 2</strong> dados. Atributos 1 e 2 não permitem descarte.</p>
-    <div class="formula">Descartes permitidos = máx(0, Atributo − 2)</div>
-    <p>É proibido descartar a ponto de anular o teste: sempre é preciso manter ao menos 1 dado. O objetivo é eliminar faces com Pressão ou vazias para preservar Sucessos e Adaptações.</p>
+      <h3>O sistema monetário</h3>
+      <p>A riqueza é transacionada em quatro cunhagens:</p>
+      <div class="tabela-wrap">
+        <table>
+          <thead><tr><th>Moeda</th><th>Valor</th><th>Uso típico</th></tr></thead>
+          <tbody>
+            <tr><td>Cobre (MC)</td><td class="mono">1 MC</td><td>Pão, cerveja aguada, vela de sebo</td></tr>
+            <tr><td>Prata (MP)</td><td class="mono">100 MC</td><td>Estalagens, ferramentas, armas simples, dízimos</td></tr>
+            <tr><td>Ouro (MO)</td><td class="mono">100 MP (10.000 MC)</td><td>Privilégio: armaduras completas, carruagens, terras, servos</td></tr>
+            <tr><td>Platina (MPl)</td><td class="mono">1.000 MO (10.000.000 MC)</td><td>Transações entre coroas e resgates de reis</td></tr>
+          </tbody>
+        </table>
+      </div>
 
-    <h3>Rerolagens</h3>
-    <p>Habilidades que permitem rerolar, como Sorte Divina, valem apenas para dados mantidos após o descarte. Para cada ponto de rerolagem, escolha um dado mantido e role sua face de novo. O novo resultado substitui o anterior.</p>
+      <h3>Patrimônio inicial</h3>
+      <p>Depende da casta, da Presença e da idade, contada a partir dos 18 anos. Com 18 anos, o multiplicador é 1.</p>
+      <ul>
+        <li><strong>Nobreza:</strong> 15 MO × Presença × (Idade − 18)</li>
+        <li><strong>Plebe:</strong> 10 MP × Presença × (Idade − 18)</li>
+      </ul>
+      <p>Exemplo: um nobre de 30 anos com Presença 2 acumula 15 × 2 × 12 = 360 MO.</p>
 
-    <h3>Tábua prática de resolução simbólica</h3>
-    <ol>
-      <li><strong>Declaração:</strong> o mestre classifica a ação como numeral ou simbólica.</li>
-      <li><strong>Preparação:</strong> quantidade de dados = valor do atributo; tipo de dado = treinamento.</li>
-      <li><strong>Rolagem:</strong> role todos os dados da reserva.</li>
-      <li><strong>Purificação:</strong> descarte até (Atributo − 2) dados, mantendo ao menos 1.</li>
-      <li><strong>Veredito:</strong> some os símbolos mantidos. S define a potência do efeito, A traz adaptações e alívios, e P gera desgaste, atrito com superiores ou fadiga.</li>
-    </ol>
-  </article>
+      <h3>Carga</h3>
+      <p>A cada 50 moedas de qualquer tipo, ocupa-se 1 espaço de inventário. Quantias abaixo de 50 moedas têm peso desprezível.</p>
 
-  <footer class="download-final">
-    <p>Prefere ler no papel ou guardar uma cópia?</p>
-    <a class="botao-pdf" href="Malleus_Maleficarum_-_Regras.pdf" download>
-      <span aria-hidden="true">⤓</span> Baixar PDF
-    </a>
-  </footer>
+      <h3>Os gentios</h3>
+      <p>Mercenários cínicos, hereges fugitivos e pagãos também cruzam o Abismo. A Mácula os atinge da mesma forma, com os mesmos aumentos físicos e poderes paranormais. Ao atingir 50%, também manifestam deformidades e afinidade elemental.</p>
+      <p>A diferença está na estrutura psicológica. O gentio <strong>não tem barra de Crença</strong>. Gerencia PV, Sanidade (SAN) e Pontos de Esforço (PE) pelas regras padrão. Não pode usar Dedicar Sua Fé nem manifestar Ritos da Fé, e fica suscetível aos danos de sanidade.</p>
 
+      <div class="caixa">
+        <h4>Conversão pelo Rito de Iniciação</h4>
+        <p>Um gentio pode se submeter ao Santo Ofício pelo Rito de Iniciação (Religião, DT 30). A conversão é irreversível: a Origem muda para Abençoado; SAN e PE são descartados e unificados na barra de Crença, calculada pela classe e pela Mácula acumulada; e o personagem passa a receber os benefícios de Dedicar Sua Fé, bênçãos coletivas e sacramentos.</p>
+      </div>
+    </article>
+
+    <!-- ============ CAPÍTULO 5 ============ -->
+    <article class="capitulo" id="cap-5">
+      <p class="numero">Capítulo 5 de 5</p>
+      <h2>Julgamento e Destino: o Sistema de Rolagem Híbrida</h2>
+      <p class="aforismo-cap">Há ações cuja realização está em dúvida, e outras cujo resultado é certo, mas cuja qualidade depende da Providência.</p>
+
+      <h3>Quando usar cada rolagem</h3>
+      <p>Cabe ao mestre decidir, com base nestas premissas:</p>
+      <ul>
+        <li><strong>Rolagem numeral:</strong> ações diretas, reativas ou competitivas contra uma DT fixa ou defesa. Decide se a ação acontece. Ex.: golpe de espada, perceber um cultista escondido, resistir a um veneno.</li>
+        <li><strong>Rolagem simbólica:</strong> quando a ação será concluída de qualquer forma e os dados definem a qualidade e as consequências. Ex.: Dedicar Sua Fé, decifrar manuscritos, conduzir um interrogatório, preparar ritos.</li>
+      </ul>
+
+      <h3>Rolagem numeral</h3>
+      <ol>
+        <li>Role d20 em número igual ao valor do atributo. Se o atributo for 0, role 2d20 e fique com o menor.</li>
+        <li>Escolha o maior dado e some o bônus de treinamento: Destreinado +0, Treinado +5, Veterano +10, Expert +15.</li>
+        <li>Compare o total com a DT.</li>
+      </ol>
+
+      <h3>Rolagem simbólica</h3>
+      <p>Os dados trazem três símbolos: <strong>S</strong> (Sucesso, eficácia e perfeição), <strong>A</strong> (Adaptação, oportunidades, serenidade e vantagens) e <strong>P</strong> (Pressão, cansaço, complicações e o olhar do Abismo).</p>
+      <div class="tabela-wrap">
+        <table>
+          <thead><tr><th>Treinamento</th><th>Dado</th><th>Natureza</th></tr></thead>
+          <tbody>
+            <tr><td>Destreinado / Leigo</td><td class="mono">d4</td><td>Faces limitadas, com mais incerteza</td></tr>
+            <tr><td>Treinado</td><td class="mono">d6</td><td>Equilíbrio entre sucessos e adaptações</td></tr>
+            <tr><td>Veterano</td><td class="mono">d10</td><td>Probabilidade alta de sucessos múltiplos</td></tr>
+            <tr><td>Expert</td><td class="mono">d12</td><td>Maestria espiritual, com faces densas</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Na rolagem simbólica, o treinamento não dá bônus numérico. Ele só define o tipo de dado. Com atributo 0, rola-se 1d4, independentemente do treinamento.</p>
+
+      <h3>Descarte e retenção</h3>
+      <p>Role um número de dados igual ao atributo. Depois, pode descartar até <strong>Atributo − 2</strong> dados. Atributos 1 e 2 não permitem descarte.</p>
+      <div class="formula">Descartes permitidos = máx(0, Atributo − 2)</div>
+      <p>É proibido descartar a ponto de anular o teste: sempre é preciso manter ao menos 1 dado. O objetivo é eliminar faces com Pressão ou vazias para preservar Sucessos e Adaptações.</p>
+
+      <h3>Rerolagens</h3>
+      <p>Habilidades que permitem rerolar, como Sorte Divina, valem apenas para dados mantidos após o descarte. Para cada ponto de rerolagem, escolha um dado mantido e role sua face de novo. O novo resultado substitui o anterior.</p>
+
+      <h3>Tábua prática de resolução simbólica</h3>
+      <ol>
+        <li><strong>Declaração:</strong> o mestre classifica a ação como numeral ou simbólica.</li>
+        <li><strong>Preparação:</strong> quantidade de dados = valor do atributo; tipo de dado = treinamento.</li>
+        <li><strong>Rolagem:</strong> role todos os dados da reserva.</li>
+        <li><strong>Purificação:</strong> descarte até (Atributo − 2) dados, mantendo ao menos 1.</li>
+        <li><strong>Veredito:</strong> some os símbolos mantidos. S define a potência do efeito, A traz adaptações e alívios, e P gera desgaste, atrito com superiores ou fadiga.</li>
+      </ol>
+    </article>
+
+    <nav class="paginacao" aria-label="Navegação entre capítulos">
+      <button type="button" id="ant" class="btn-pag">← Anterior</button>
+      <span id="posicao" class="posicao" aria-live="polite">Capítulo 1 de 5</span>
+      <button type="button" id="prox" class="btn-pag">Próximo →</button>
+    </nav>
+
+    <footer class="rodape-regras">
+      <p>Prefere ler no papel ou guardar uma cópia?</p>
+      <a class="botao-pdf" href="../downloads/MalleusMaleficarumRegras.pdf" download>
+        <span aria-hidden="true">⤓</span> <span>Baixar PDF</span>
+      </a>
+    </footer>
+  </main>
 </div>
 
 </body>
