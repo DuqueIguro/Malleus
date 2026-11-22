@@ -19,7 +19,8 @@ Malleus
 │     └─ regras.js
 ├─ Hieararquia.md
 ├─ img
-│  └─ Igreja.png
+│  ├─ Igreja.png
+│  └─ IgrejaCapa.jpg
 ├─ index.html
 ├─ login.html
 ├─ mestre
