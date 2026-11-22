@@ -42,9 +42,9 @@ const DESTINOS = [
     titulo: "Regras da Casa",
     desc: "Doutrinas, cânones e regras do Santo Ofício.",
     icone: "📜",
-    href: "Malleus_Maleficarum_-_Regras.pdf",
+    href: "pages/regras.html",
     estado: "disponivel",
-    selo: "PDF"
+    selo: "Protótipo"
   }
 ];
 
