@@ -1,0 +1,146 @@
+/* ============================================================
+   LOGIN
+   Cartão centralizado sobre a imagem da igreja.
+   ============================================================ */
+
+:root {
+  --pedra-0: #0c0a09;
+  --pedra-2: #292524;
+  --ouro: #fcd34d;
+  --ouro-2: #d4a047;
+  --ouro-borda: rgba(180, 130, 50, .45);
+  --texto: #e7e5e4;
+  --texto-suave: #b5ada6;
+  --erro: #fb7185;
+  --serif: 'Crimson Text', Georgia, serif;
+  --titulo: 'Cinzel', Georgia, serif;
+  --gotico: 'UnifrakturCook', 'Cinzel', serif;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh;
+  font-family: var(--serif); font-size: 18px; line-height: 1.5;
+  color: var(--texto); background: var(--pedra-0);
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px 16px;
+}
+
+/* Fundo: imagem da igreja escurecida, com brilho de vela ao alto */
+.fundo {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse at 50% -10%, rgba(251, 191, 36, .18), transparent 55%),
+    linear-gradient(180deg, rgba(12, 10, 9, .72), rgba(12, 10, 9, .94)),
+    url("../../img/igrejaCapa.jpg") center / cover no-repeat;
+}
+
+:focus-visible { outline: 2px solid var(--ouro); outline-offset: 3px; }
+
+/* ---------- Cartão ---------- */
+.cartao {
+  position: relative; z-index: 1;
+  width: 100%; max-width: 420px;
+  padding: 40px 36px 32px;
+  border-radius: 6px;
+  border: 1px solid var(--ouro-borda);
+  background: linear-gradient(180deg, rgba(41, 37, 36, .94), rgba(12, 10, 9, .96));
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, .6), 0 18px 50px rgba(0, 0, 0, .6);
+}
+.cartao::before {
+  content: ""; position: absolute; inset: 6px;
+  border: 1px solid rgba(217, 170, 70, .14); border-radius: 4px; pointer-events: none;
+}
+
+.voltar {
+  color: var(--texto-suave); text-decoration: none; font-size: .95rem;
+}
+.voltar:hover { color: var(--ouro); }
+
+/* ---------- Cabeçalho ---------- */
+.cabeca { text-align: center; margin: 18px 0 28px; }
+.cruz { color: var(--ouro-2); font-size: 24px; line-height: 1; }
+h1 {
+  font-family: var(--gotico); font-weight: 700; font-size: 3rem; line-height: 1.1;
+  color: var(--ouro); margin: 8px 0 4px;
+  text-shadow: 0 0 18px rgba(251, 191, 36, .4);
+}
+.subtitulo {
+  margin: 0; font-family: var(--titulo); font-size: .75rem;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--texto-suave);
+}
+
+/* ---------- Formulário ---------- */
+.form { display: grid; gap: 18px; }
+
+.campo { display: grid; gap: 6px; }
+.campo label {
+  font-family: var(--titulo); font-size: .7rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--ouro);
+}
+
+input {
+  width: 100%; font: inherit; font-size: 1.05rem; color: var(--texto);
+  background: rgba(12, 10, 9, .85);
+  border: 1px solid #57534e; border-radius: 4px;
+  padding: 11px 14px; min-height: 46px;
+  transition: border-color .2s, box-shadow .2s;
+}
+input::placeholder { color: #6b645e; }
+input:focus {
+  outline: none; border-color: var(--ouro);
+  box-shadow: 0 0 0 2px rgba(251, 191, 36, .25);
+}
+input[aria-invalid="true"] { border-color: var(--erro); }
+
+.campo-senha { position: relative; }
+.campo-senha input { padding-right: 96px; }
+
+.mostrar {
+  position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
+  font: inherit; font-size: .8rem; color: var(--texto-suave);
+  background: none; border: 0; padding: 6px 10px; cursor: pointer;
+  border-radius: 3px; min-height: 34px;
+}
+.mostrar:hover { color: var(--ouro); }
+.mostrar[aria-pressed="true"] { color: var(--ouro); }
+
+/* ---------- Erro ---------- */
+.erro {
+  margin: 0; padding: 10px 12px; border-radius: 4px;
+  font-size: .95rem; color: #fecdd3;
+  background: rgba(127, 29, 29, .35); border: 1px solid rgba(251, 113, 133, .45);
+}
+.erro[hidden] { display: none; }
+
+/* ---------- Botão ---------- */
+.btn-entrar {
+  width: 100%; min-height: 48px; cursor: pointer;
+  font-family: var(--titulo); font-size: .85rem; letter-spacing: .14em; text-transform: uppercase;
+  color: #1c1917; border: 0; border-radius: 4px;
+  background: linear-gradient(180deg, #fcd34d, #b45309);
+  box-shadow: 0 0 0 1px #78350f, 0 4px 14px rgba(251, 191, 36, .25);
+  transition: box-shadow .2s, transform .15s, opacity .2s;
+  margin-top: 4px;
+}
+.btn-entrar:hover:not(:disabled) {
+  box-shadow: 0 0 0 1px #fbbf24, 0 0 22px rgba(251, 191, 36, .55);
+}
+.btn-entrar:active:not(:disabled) { transform: scale(.98); }
+.btn-entrar:disabled { opacity: .6; cursor: progress; }
+
+/* ---------- Ajuda ---------- */
+.ajuda {
+  margin: 26px 0 0; text-align: center;
+  font-size: .92rem; color: var(--texto-suave);
+}
+
+/* ---------- Celular ---------- */
+@media (max-width: 480px) {
+  .cartao { padding: 32px 22px 26px; }
+  h1 { font-size: 2.6rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}

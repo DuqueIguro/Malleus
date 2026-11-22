@@ -9,8 +9,8 @@ const DESTINOS = [
     titulo: "Entrar",
     desc: "Acesso de mestres e jogadores à mesa.",
     icone: "🔑",
-    href: "entrar.html",
-    estado: "em-breve"
+    href: "login.html",
+    estado: "disponivel"
   },
   {
     grupo: "Mesa",
