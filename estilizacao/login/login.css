@@ -32,7 +32,7 @@ body {
   background:
     radial-gradient(ellipse at 50% -10%, rgba(251, 191, 36, .18), transparent 55%),
     linear-gradient(180deg, rgba(12, 10, 9, .72), rgba(12, 10, 9, .94)),
-    url("../../img/igrejaCapa.jpg") center / cover no-repeat;
+    url("../../img/IgrejaCapa.jpg") center / cover no-repeat;
 }
 
 :focus-visible { outline: 2px solid var(--ouro); outline-offset: 3px; }
