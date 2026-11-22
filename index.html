@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Malleus Maleficarum</title>
+  <meta name="description" content="Portal da campanha Malleus Maleficarum.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div id="nave" aria-hidden="true"></div>
+
+<svg id="vitral" aria-hidden="true" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="rg" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fef3c7"/>
+      <stop offset="1" stop-color="#78350f"/>
+    </radialGradient>
+  </defs>
+  <circle cx="200" cy="200" r="180" fill="none" stroke="#b45309" stroke-width="4"/>
+  <circle cx="200" cy="200" r="130" fill="none" stroke="#b45309" stroke-width="2"/>
+  <g id="raios"></g>
+  <circle cx="200" cy="200" r="34" fill="url(#rg)" stroke="#78350f" stroke-width="3"/>
+</svg>
+
+<div class="conteudo">
+  <header class="topo">
+    <div class="cruz" aria-hidden="true">✠</div>
+    <h1>Malleus Maleficarum</h1>
+    <p class="subtitulo">Crônicas do Santo Ofício</p>
+    <p class="aforismo">“Saber demais é perder a salvação.”</p>
+    <div class="divisor" aria-hidden="true"></div>
+  </header>
+
+  <main id="portas">
+    <noscript><p class="sem-js">Esta página precisa de JavaScript para exibir os destinos.</p></noscript>
+  </main>
+
+  <footer class="rodape">
+    <p>Campanha de mesa · <a href="#" aria-disabled="true">Contato do mestre em breve</a></p>
+  </footer>
+</div>
+
+<button type="button" class="alternar-vitral" id="btn-vitral" aria-pressed="true">Desligar vitral</button>
+
+<script src="index.js" defer></script>
+</body>
+</html>
